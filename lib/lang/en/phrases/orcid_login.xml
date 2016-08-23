@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+<!-- NewOrcidUser phrases -->
+    <epp:phrase id="Plugin/Screen/EPMC/OrcidLogin:error:no_plugin">Error: failed to load the Orcid plugin. Is the Orcid Tier 2 Framework installed?</epp:phrase>
+    <epp:phrase id="Plugin/Screen/EPMC/OrcidLogin:ready">ORCID Login is ready to be used on your system.</epp:phrase>
+
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:blurb"><p>Create a new user account with an ORCID iD. The user will be able to login using the iD</p></epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:title">Create ORCID user</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:description">Create a new user account with an ORCID iD that the user can use to login with</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:action:create:title">Create User</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:action:cancel:title">Cancel</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:no_username">No username entered!</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:no_userorcid">No ORCID iD entered!</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:user_exists">A user with the username "<epc:pin name="username"/>" already exists!</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:user_orcid_exists">A user with the ORCID id "<epc:pin name="orcid"/>" already exists! See user(s) <epc:pin name="userids"/></epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:wrong_format">The ORCID id "<epc:pin name="orcid"/>" has the wrong format</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:db_error">Error registering user.</epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:lookup_error">Failed to retrieve data for ORCID id "<epc:pin name="orcid"/>" Error code: <epc:pin name="code"/></epp:phrase>
+    <epp:phrase id="Plugin/Screen/NewOrcidUser:ids_do_not_match">ORCID id "<epc:pin name="orcid"/>" does not match the value returned from the registry</epp:phrase>
+
+
+    <epp:phrase id="user_fieldname_allow_orcid_login">Allow login via ORCID iD.</epp:phrase>
+
+    <epp:phrase id="Plugin/Screen/Login/OrcidLogin:title">Login via ORCID</epp:phrase>
+    <epp:phrase id="Plugin/Screen/Login/OrcidLogin:title:logged_in"></epp:phrase>
+
+    <epp:phrase id="Plugin/Screen/Login/OrcidLogin:page_layout">
+      <epc:pin name="problems"/>
+      <div class="ep_block">
+        <p>Please enter your ORCID iD. </p>
+        <table style="margin:auto">
+          <tr><td>ORCID iD:</td><td><epc:pin name="input_orcidid"/></td><td><epc:pin name="login_button"/></td></tr>
+        </table>
+        <p>Note: you must have cookies enabled.</p>
+      </div>
+    </epp:phrase>
+ 
+    <epp:phrase id="Plugin/Screen/Login/OrcidLogin:wrong_format">The ORCID id "<epc:pin name="orcid"/>" has the wrong format</epp:phrase>
+    <epp:phrase id="Plugin/Screen/Login/OrcidLogin:not_unique">The ORCID id "<epc:pin name="orcid"/>" is not unique</epp:phrase>
+    <epp:phrase id="Plugin/Screen/Login/OrcidLogin:not_allowed">The user with ORCID id "<epc:pin name="orcid"/>" is not currently allowed to login via ORCID</epp:phrase>
+
+
+</epp:phrases>
